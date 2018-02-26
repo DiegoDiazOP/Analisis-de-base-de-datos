@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>Diegoffhour</title>
+		<meta charset="utf-8" >
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body>
+	<section>
+		<h1>Statistics</h1>
+		<header>
+			<nav>
+				<ul class="barra1">
+					<li class="menu1"><a href="http://localhost/phpmyadmin" target=".blank">PHPmyadmin</a></li>
+					<li class="menu1"><a href="statistics.html" >Regresar</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<form method="post" action="functions.php">
+			<table>
+				<tr>
+					<td><span>Nombre de la base de datos:</span></td>
+					<td><input type="text" name="base"></td>
+				</tr>
+				<tr>
+					<td><span>Nombre de la tabla:</span></td>
+					<td><input type="text" name="tabla"></td>
+				</tr>
+				<tr>
+					<td><span>Nombre de la variable:</span></td>
+					<td><input type="text" name="variable"></td>
+				</tr>
+				<tr>
+					<td><span>Tipo (1:Discreta, 2:Continua):</span></td>
+					<td><input type="text" name="tipo"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input class="boton" type="submit" value="Calcular estadisticos"></td>
+				</tr>
+			</table>
+		</form>
+		
+	</section>
+	
+	</body>
+</html>
